@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08590D6DB517205AAB1B2CA2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0149FD34D5E47E05A1773941 /* IOKit.framework */; };
+		11A4E488EF6C9C7B4B124099 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0E111E9DEDE8F6035072D /* CoreImage.framework */; };
+		1B566EECC0E763428DDC3E56 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFCA87D2F578316194FA68E /* Cocoa.framework */; };
+		25F2FDC6BE925BBBAC22A858 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFB1801452D30B7EA043A08 /* CoreText.framework */; };
+		2830E87BCABB971EDD652300 /* PluginScanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A379B7B1E2AA0E6518B182C /* PluginScanManager.swift */; };
+		2B469445B80185B387D1896A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF705A4CE44650F2B1034A /* AppDelegate.swift */; };
+		65C7315132FF71C422609A37 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E9968CAFDBFB33D2FD1458 /* Accelerate.framework */; };
+		796653240B2F1FB4290F2F3B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E54E78E950AD1E11A13008 /* QuartzCore.framework */; };
+		8209F90C96C7493A44B94AD1 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A576BF13D6BAD38066DFD27 /* Metal.framework */; };
+		8B29FA306F258857D6ABF359 /* MenuBarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 088CF2DBB402527F69E621C7 /* MenuBarIcon@2x.png */; };
+		93622005A8E96016F34CE307 /* EngineBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = C414F101FE399870A9F7AC17 /* EngineBridge.mm */; };
+		946C102320CC08D10D58CA0D /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A014774FCD2FC3E2C605D4E6 /* CoreAudioKit.framework */; };
+		96BD8A4B0BEBF7F95519EECA /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5AF821477773299E848C5067 /* AppIcon.icns */; };
+		99BC805C24D6C0E8F100A8D9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5087C08B65942C78867A5D /* CoreFoundation.framework */; };
+		A5AB969101B9851102809018 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987C28603B11AED952197695 /* CoreMIDI.framework */; };
+		BC58E4617E7E0D6636C11D65 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585EE9A9349D0E12E76AAD44 /* CoreAudio.framework */; };
+		D1DC3F822437DB4C3D296EF6 /* DriverInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963D87BD9FDF02041880594 /* DriverInstaller.swift */; };
+		D94DF6C87BE8A119C8992658 /* libfxrouter_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2119808451F605D86A11BD13 /* libfxrouter_engine.a */; };
+		DC3D8FEAEE637B7131D37F07 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8920101FC562F10C57EB6258 /* MenuBarController.swift */; };
+		E70822E3CA821AC065307F4E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19819B37941EDBDB2B938FB2 /* Security.framework */; };
+		EB8CDD9E8E4154F8D831FDDE /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293AFCC22569C9EF1E836E44 /* UniformTypeIdentifiers.framework */; };
+		F05F5D362A3199A4AED54BA3 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A5A9BAC30916B001E1A48C /* MetalKit.framework */; };
+		F2C5CA81F96859B27346111A /* MenuBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DFE6D884D6B16A0A9391DA /* MenuBarIcon.png */; };
+		F74504F873A185C648605F49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D870ADB7947DAD7B6098F3 /* AudioToolbox.framework */; };
+		FE7D187820319D852FA11E66 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EE80B0130B380DA6810AC0 /* AppSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0149FD34D5E47E05A1773941 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		02A6BEB0FCC7E18B561CC119 /* FXRouter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FXRouter-Bridging-Header.h"; sourceTree = "<group>"; };
+		088CF2DBB402527F69E621C7 /* MenuBarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuBarIcon@2x.png"; sourceTree = "<group>"; };
+		08EE80B0130B380DA6810AC0 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		0A576BF13D6BAD38066DFD27 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		18E9968CAFDBFB33D2FD1458 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		19819B37941EDBDB2B938FB2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1EA5FC743D060765A36C2031 /* FXRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FXRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2119808451F605D86A11BD13 /* libfxrouter_engine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfxrouter_engine.a; path = ../engine/build/libfxrouter_engine.a; sourceTree = "<group>"; };
+		293AFCC22569C9EF1E836E44 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		30CF705A4CE44650F2B1034A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3963D87BD9FDF02041880594 /* DriverInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInstaller.swift; sourceTree = "<group>"; };
+		4E5087C08B65942C78867A5D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		53A5A9BAC30916B001E1A48C /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		55F0E111E9DEDE8F6035072D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		585EE9A9349D0E12E76AAD44 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		5AF821477773299E848C5067 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		6DFB1801452D30B7EA043A08 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		76E54E78E950AD1E11A13008 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7A379B7B1E2AA0E6518B182C /* PluginScanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginScanManager.swift; sourceTree = "<group>"; };
+		7FF98A7B8F92059354BE3045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8920101FC562F10C57EB6258 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		8CFCA87D2F578316194FA68E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		987C28603B11AED952197695 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		A014774FCD2FC3E2C605D4E6 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		A1D870ADB7947DAD7B6098F3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A7DFE6D884D6B16A0A9391DA /* MenuBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuBarIcon.png; sourceTree = "<group>"; };
+		C414F101FE399870A9F7AC17 /* EngineBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EngineBridge.mm; sourceTree = "<group>"; };
+		F5389B12EFC4F3A55A6B61AF /* EngineBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EngineBridge.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B92AD7B074B53E22C2BC18C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94DF6C87BE8A119C8992658 /* libfxrouter_engine.a in Frameworks */,
+				BC58E4617E7E0D6636C11D65 /* CoreAudio.framework in Frameworks */,
+				99BC805C24D6C0E8F100A8D9 /* CoreFoundation.framework in Frameworks */,
+				65C7315132FF71C422609A37 /* Accelerate.framework in Frameworks */,
+				1B566EECC0E763428DDC3E56 /* Cocoa.framework in Frameworks */,
+				08590D6DB517205AAB1B2CA2 /* IOKit.framework in Frameworks */,
+				E70822E3CA821AC065307F4E /* Security.framework in Frameworks */,
+				796653240B2F1FB4290F2F3B /* QuartzCore.framework in Frameworks */,
+				8209F90C96C7493A44B94AD1 /* Metal.framework in Frameworks */,
+				F05F5D362A3199A4AED54BA3 /* MetalKit.framework in Frameworks */,
+				11A4E488EF6C9C7B4B124099 /* CoreImage.framework in Frameworks */,
+				25F2FDC6BE925BBBAC22A858 /* CoreText.framework in Frameworks */,
+				F74504F873A185C648605F49 /* AudioToolbox.framework in Frameworks */,
+				946C102320CC08D10D58CA0D /* CoreAudioKit.framework in Frameworks */,
+				A5AB969101B9851102809018 /* CoreMIDI.framework in Frameworks */,
+				EB8CDD9E8E4154F8D831FDDE /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36A46DB9B71086208AF9E79F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EA5FC743D060765A36C2031 /* FXRouter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E4B6B3147CAF82FB87F9116 /* FXRouter */ = {
+			isa = PBXGroup;
+			children = (
+				30CF705A4CE44650F2B1034A /* AppDelegate.swift */,
+				08EE80B0130B380DA6810AC0 /* AppSettings.swift */,
+				3963D87BD9FDF02041880594 /* DriverInstaller.swift */,
+				F5389B12EFC4F3A55A6B61AF /* EngineBridge.h */,
+				C414F101FE399870A9F7AC17 /* EngineBridge.mm */,
+				02A6BEB0FCC7E18B561CC119 /* FXRouter-Bridging-Header.h */,
+				7FF98A7B8F92059354BE3045 /* Info.plist */,
+				8920101FC562F10C57EB6258 /* MenuBarController.swift */,
+				7A379B7B1E2AA0E6518B182C /* PluginScanManager.swift */,
+				A2F01B41323B8A5B491F0820 /* Resources */,
+			);
+			path = FXRouter;
+			sourceTree = "<group>";
+		};
+		A287CFF20CA8F953C41D9C77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E9968CAFDBFB33D2FD1458 /* Accelerate.framework */,
+				A1D870ADB7947DAD7B6098F3 /* AudioToolbox.framework */,
+				8CFCA87D2F578316194FA68E /* Cocoa.framework */,
+				585EE9A9349D0E12E76AAD44 /* CoreAudio.framework */,
+				A014774FCD2FC3E2C605D4E6 /* CoreAudioKit.framework */,
+				4E5087C08B65942C78867A5D /* CoreFoundation.framework */,
+				55F0E111E9DEDE8F6035072D /* CoreImage.framework */,
+				987C28603B11AED952197695 /* CoreMIDI.framework */,
+				6DFB1801452D30B7EA043A08 /* CoreText.framework */,
+				0149FD34D5E47E05A1773941 /* IOKit.framework */,
+				2119808451F605D86A11BD13 /* libfxrouter_engine.a */,
+				0A576BF13D6BAD38066DFD27 /* Metal.framework */,
+				53A5A9BAC30916B001E1A48C /* MetalKit.framework */,
+				76E54E78E950AD1E11A13008 /* QuartzCore.framework */,
+				19819B37941EDBDB2B938FB2 /* Security.framework */,
+				293AFCC22569C9EF1E836E44 /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2F01B41323B8A5B491F0820 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AF821477773299E848C5067 /* AppIcon.icns */,
+				A7DFE6D884D6B16A0A9391DA /* MenuBarIcon.png */,
+				088CF2DBB402527F69E621C7 /* MenuBarIcon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A575DCE70F1E27AB0B3FB590 = {
+			isa = PBXGroup;
+			children = (
+				6E4B6B3147CAF82FB87F9116 /* FXRouter */,
+				A287CFF20CA8F953C41D9C77 /* Frameworks */,
+				36A46DB9B71086208AF9E79F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E053D4F56290C5FD9B49F5A /* FXRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B93C1BBD3B7CFFF7B500894 /* Build configuration list for PBXNativeTarget "FXRouter" */;
+			buildPhases = (
+				884D3DDCC90384B27D332F05 /* Sources */,
+				9FCC1CFF59BD974C4302EE96 /* Resources */,
+				B92AD7B074B53E22C2BC18C8 /* Frameworks */,
+				07FC7E8468D5086F3AC87933 /* Bundle HAL driver */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FXRouter;
+			packageProductDependencies = (
+			);
+			productName = FXRouter;
+			productReference = 1EA5FC743D060765A36C2031 /* FXRouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6678530BF55DA8AE0F0644B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4E053D4F56290C5FD9B49F5A = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8046423208B07A77C7149316 /* Build configuration list for PBXProject "FXRouter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A575DCE70F1E27AB0B3FB590;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 36A46DB9B71086208AF9E79F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E053D4F56290C5FD9B49F5A /* FXRouter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FCC1CFF59BD974C4302EE96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BD8A4B0BEBF7F95519EECA /* AppIcon.icns in Resources */,
+				F2C5CA81F96859B27346111A /* MenuBarIcon.png in Resources */,
+				8B29FA306F258857D6ABF359 /* MenuBarIcon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07FC7E8468D5086F3AC87933 /* Bundle HAL driver */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle HAL driver";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -R \"$SRCROOT/../driver/build/FXRouter.driver\" \\\n      \"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		884D3DDCC90384B27D332F05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B469445B80185B387D1896A /* AppDelegate.swift in Sources */,
+				FE7D187820319D852FA11E66 /* AppSettings.swift in Sources */,
+				D1DC3F822437DB4C3D296EF6 /* DriverInstaller.swift in Sources */,
+				93622005A8E96016F34CE307 /* EngineBridge.mm in Sources */,
+				DC3D8FEAEE637B7131D37F07 /* MenuBarController.swift in Sources */,
+				2830E87BCABB971EDD652300 /* PluginScanManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		271BC8BFDEFDC92FC0DA37D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3A95DAD0CC0A934A79747052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		85301D87907CC9C80297388D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"../engine/build\"",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../engine/Source";
+				INFOPLIST_FILE = FXRouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../engine/build";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fxrouter.app;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "FXRouter/FXRouter-Bridging-Header.h";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		8DA846C5D388C799F770C417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"../engine/build\"",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../engine/Source";
+				INFOPLIST_FILE = FXRouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../engine/build";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fxrouter.app;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "FXRouter/FXRouter-Bridging-Header.h";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8046423208B07A77C7149316 /* Build configuration list for PBXProject "FXRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271BC8BFDEFDC92FC0DA37D4 /* Debug */,
+				3A95DAD0CC0A934A79747052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9B93C1BBD3B7CFFF7B500894 /* Build configuration list for PBXNativeTarget "FXRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85301D87907CC9C80297388D /* Debug */,
+				8DA846C5D388C799F770C417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6678530BF55DA8AE0F0644B1 /* Project object */;
+}

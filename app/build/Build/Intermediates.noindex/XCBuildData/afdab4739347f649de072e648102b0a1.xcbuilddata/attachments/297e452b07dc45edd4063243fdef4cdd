@@ -1,0 +1,59 @@
+{
+  "" : {
+    "diagnostics" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/FXRouter-primary.dia",
+    "emit-module-dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/FXRouter-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/FXRouter-primary-emit-module.dia",
+    "pch" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/FXRouter-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/FXRouter-primary.swiftdeps"
+  },
+  "/Users/cacarlto/dev/fxrouter/app/FXRouter/AppDelegate.swift" : {
+    "const-values" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/cacarlto/dev/fxrouter/app/FXRouter/AppSettings.swift" : {
+    "const-values" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppSettings.swiftconstvalues",
+    "dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppSettings.d",
+    "diagnostics" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppSettings.dia",
+    "index-unit-output-path" : "/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppSettings.o",
+    "llvm-bc" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppSettings.bc",
+    "object" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppSettings.o",
+    "swift-dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppSettings.swiftdeps",
+    "swiftmodule" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/AppSettings~partial.swiftmodule"
+  },
+  "/Users/cacarlto/dev/fxrouter/app/FXRouter/DriverInstaller.swift" : {
+    "const-values" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/DriverInstaller.swiftconstvalues",
+    "dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/DriverInstaller.d",
+    "diagnostics" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/DriverInstaller.dia",
+    "index-unit-output-path" : "/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/DriverInstaller.o",
+    "llvm-bc" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/DriverInstaller.bc",
+    "object" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/DriverInstaller.o",
+    "swift-dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/DriverInstaller.swiftdeps",
+    "swiftmodule" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/DriverInstaller~partial.swiftmodule"
+  },
+  "/Users/cacarlto/dev/fxrouter/app/FXRouter/MenuBarController.swift" : {
+    "const-values" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/MenuBarController.swiftconstvalues",
+    "dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/MenuBarController.d",
+    "diagnostics" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/MenuBarController.dia",
+    "index-unit-output-path" : "/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/MenuBarController.o",
+    "llvm-bc" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/MenuBarController.bc",
+    "object" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/MenuBarController.o",
+    "swift-dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/MenuBarController.swiftdeps",
+    "swiftmodule" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/MenuBarController~partial.swiftmodule"
+  },
+  "/Users/cacarlto/dev/fxrouter/app/FXRouter/PluginScanManager.swift" : {
+    "const-values" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/PluginScanManager.swiftconstvalues",
+    "dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/PluginScanManager.d",
+    "diagnostics" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/PluginScanManager.dia",
+    "index-unit-output-path" : "/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/PluginScanManager.o",
+    "llvm-bc" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/PluginScanManager.bc",
+    "object" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/PluginScanManager.o",
+    "swift-dependencies" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/PluginScanManager.swiftdeps",
+    "swiftmodule" : "/Users/cacarlto/dev/fxrouter/app/build/Build/Intermediates.noindex/FXRouter.build/Debug/FXRouter.build/Objects-normal/arm64/PluginScanManager~partial.swiftmodule"
+  }
+}

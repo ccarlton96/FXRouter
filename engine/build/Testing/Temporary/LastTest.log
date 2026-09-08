@@ -1,0 +1,19 @@
+Start testing: Jul 12 14:07 CDT
+----------------------------------------------------------
+1/1 Testing: engine_smoke
+1/1 Test: engine_smoke
+Command: "/Users/cacarlto/dev/fxrouter/engine/build/engine_smoke"
+Directory: /Users/cacarlto/dev/fxrouter/engine/build
+"engine_smoke" start time: Jul 12 14:07 CDT
+Output:
+----------------------------------------------------------
+engine_smoke OK
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"engine_smoke" end time: Jul 12 14:07 CDT
+"engine_smoke" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 12 14:07 CDT

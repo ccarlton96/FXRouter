@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/cacarlto/dev/fxrouter/engine/build/_deps/juce-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

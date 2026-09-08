@@ -1,0 +1,69 @@
+# XcodeGen spec — generates app/FXRouter.xcodeproj (which is gitignored).
+# Regenerate after editing: cd app && xcodegen generate
+name: FXRouter
+options:
+  bundleIdPrefix: com.fxrouter
+  deploymentTarget:
+    macOS: "13.0"
+  createIntermediateGroups: true
+
+targets:
+  FXRouter:
+    type: application
+    platform: macOS
+    sources:
+      - FXRouter
+    dependencies:
+      # The engine (including JUCE modules) is built by CMake into a static
+      # archive — build.sh builds engine before app. The bridge sees only the
+      # JUCE-free headers in engine/Source.
+      - framework: ../engine/build/libfxrouter_engine.a
+        embed: false
+      - sdk: CoreAudio.framework
+      - sdk: CoreFoundation.framework
+      - sdk: Accelerate.framework
+      # Required by the JUCE modules compiled into the engine archive:
+      - sdk: Cocoa.framework
+      - sdk: IOKit.framework
+      - sdk: Security.framework
+      - sdk: QuartzCore.framework
+      - sdk: Metal.framework
+      - sdk: MetalKit.framework
+      - sdk: CoreImage.framework
+      - sdk: CoreText.framework
+      - sdk: AudioToolbox.framework
+      - sdk: CoreAudioKit.framework
+      - sdk: CoreMIDI.framework
+      - sdk: UniformTypeIdentifiers.framework
+    info:
+      path: FXRouter/Info.plist
+      properties:
+        CFBundleDisplayName: FXRouter
+        CFBundleShortVersionString: 0.1.0
+        CFBundleVersion: "1"
+        LSUIElement: true            # menu-bar app, no Dock icon
+        CFBundleIconFile: AppIcon
+        NSMicrophoneUsageDescription: FXRouter reads audio from its own virtual device (FXRouter) to process it. No microphone audio is captured unless you route it there.
+        NSHumanReadableCopyright: © 2026 FXRouter contributors. GPLv3.
+    postBuildScripts:
+      # Embed the HAL driver in the app bundle so a DMG-distributed app is
+      # self-contained: DriverInstaller.swift installs it from here with a
+      # one-time admin prompt (no separate installer download needed).
+      # build.sh builds driver/ before the app, so the bundle already exists.
+      - name: Bundle HAL driver
+        script: |
+          cp -R "$SRCROOT/../driver/build/FXRouter.driver" \
+                "$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/"
+        basedOnDependencyAnalysis: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.fxrouter.app
+        SWIFT_VERSION: "5.9"
+        SWIFT_OBJC_BRIDGING_HEADER: FXRouter/FXRouter-Bridging-Header.h
+        CLANG_CXX_LANGUAGE_STANDARD: c++20
+        HEADER_SEARCH_PATHS: $(SRCROOT)/../engine/Source
+        LIBRARY_SEARCH_PATHS: $(SRCROOT)/../engine/build
+        CODE_SIGN_STYLE: Automatic
+        # Stage 1: signs with free Personal Team or ad-hoc; no Developer ID.
+        CODE_SIGN_IDENTITY: "-"
+        ENABLE_HARDENED_RUNTIME: false
