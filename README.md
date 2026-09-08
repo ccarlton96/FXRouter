@@ -19,8 +19,8 @@ Any app ──▶ FXRouter device ──▶ plugin 1 → plugin 2 → … ──
 ## Install
 
 ```sh
-git clone https://github.com/ccarlton96/fxrouter.git
-cd fxrouter
+git clone [repo]
+cd FXRouter
 ./installer/install.sh
 ```
 
