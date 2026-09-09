@@ -41,6 +41,9 @@ launches it.
 While output is set to FXRouter, sound only plays while the app is running —
 turn on **Launch at Login** in the app's Settings menu.
 
+Example image of FXRouter running:
+<img width="462" height="630" alt="Screenshot 2026-09-09 at 11 28 41 AM" src="https://github.com/user-attachments/assets/ee68892c-d0fd-4e24-b115-117840dc8ce7" />
+
 ## Uninstall
 
 ```sh
